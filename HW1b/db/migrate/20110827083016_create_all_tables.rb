@@ -3,7 +3,6 @@ class CreateAllTables < ActiveRecord::Migration
     create_table :agents do |t|
       t.string :name
       t.string :vote
-      t.boolean :voted_already
       t.timestamps
     end
 

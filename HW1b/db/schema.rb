@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(:version => 20110827083016) do
   create_table "agents", :force => true do |t|
     t.string   "name"
     t.string   "vote"
-    t.boolean  "voted_already"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

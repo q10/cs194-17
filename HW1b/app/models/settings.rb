@@ -4,6 +4,7 @@ class Settings < ActiveRecord::Base
   def after_initialize
     if self.new_record?
       self.victor_declared = false
+      self.voting_started = false
     end
   end
 

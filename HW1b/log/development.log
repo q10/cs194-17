@@ -258,3 +258,2372 @@ Migrating to CreateAllTables (20110827083016)
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("agents")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("candidates")[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("settings")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mAgent Delete all (0.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mAgent Create (3.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at", "voted_already") VALUES(NULL, NULL, '2011-08-27 23:13:20', '2011-08-27 23:13:20', NULL)[0m
+  [4;35;1mAgent Create (3.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at", "voted_already") VALUES(NULL, NULL, '2011-08-27 23:13:25', '2011-08-27 23:13:25', NULL)[0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mAgent Delete all (121.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCandidate Create (3.0ms)[0m   [0;1mINSERT INTO "candidates" ("name") VALUES(NULL)[0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCandidate Delete all (88.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Create (3.0ms)[0m   [0mINSERT INTO "settings" ("created_at", "updated_at", "victor_declared", "voting_started") VALUES('2011-08-27 23:19:01', '2011-08-27 23:19:01', 'f', 'f')[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 16:22:21) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: member, reset_state, rst, update_victor, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 16:22:27) [GET]
+
+ActionController::RoutingError (No route matches "/victor" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 16:23:14) [GET]
+
+ActionController::RoutingError (No route matches "/victosdf" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:23:20) [GET]
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+
+ActionView::MissingTemplate (Missing template main/victor.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 16:24:45) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: member, reset_state, rst, update_victor, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 16:25:00) [GET]
+
+ActionController::RoutingError (No route matches "/victor" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 16:25:35) [GET]
+
+ActionView::MissingTemplate (Missing template main/index.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 16:25:43) [GET]
+
+ActionController::RoutingError (No route matches "/victor" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 16:27:22) [GET]
+
+ActionView::MissingTemplate (Missing template main/index.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 16:27:34) [GET]
+
+ActionController::RoutingError (No route matches "/victor" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 16:30:22) [GET]
+
+ActionView::MissingTemplate (Missing template main/index.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#VICTOR (for 127.0.0.1 at 2011-08-27 16:30:27) [GET]
+
+ActionController::UnknownAction (No action responded to VICTOR. Actions: index, member, reset_state, rst, update_victor, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:30:33) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+
+ActionView::MissingTemplate (Missing template main/victor.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 16:31:28) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 99ms (View: 87, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:32:08) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 42ms (View: 9, DB: 3) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:35:03) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 35ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:35:21) [GET]
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 39ms (View: 3, DB: 0) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:38:15) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 34ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:39:53) [GET]
+  Parameters: {"agent"=>"carol"}
+  [4;35;1mAgent Load (2.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 60ms (View: 1, DB: 2) | 200 OK [http://localhost/victor?agent=carol]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:41:22) [GET]
+  Parameters: {"agent"=>"carol"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 51ms (View: 2, DB: 2) | 200 OK [http://localhost/victor?agent=carol]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:41:32) [GET]
+  Parameters: {"agent"=>"carol43"}
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 40ms (View: 4, DB: 2) | 200 OK [http://localhost/victor?agent=carol43]
+
+
+Processing ApplicationController#victor (for 127.0.0.1 at 2011-08-27 16:42:21) [GET]
+  Parameters: {"agent"=>"carol43"}
+
+SyntaxError (C:/Users/BENSON J MA/cs194-17/HW1b/app/controllers/main_controller.rb:16: syntax error, unexpected kNOT, expecting kTHEN or ':' or '\n' or ';'
+    if agent_name not Settings.instance.voting_started
+                     ^
+C:/Users/BENSON J MA/cs194-17/HW1b/app/controllers/main_controller.rb:31: syntax error, unexpected kEND, expecting $end):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (18.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 16:42:33) [GET]
+  Parameters: {"agent"=>"carol43"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 28ms (View: 1, DB: 1) | 200 OK [http://localhost/victor?agent=carol43]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mAgent Create (2.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at", "voted_already") VALUES('asd', NULL, '2011-08-27 23:45:12', '2011-08-27 23:45:12', NULL)[0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mAgent Create (2.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at", "voted_already") VALUES('asd', NULL, '2011-08-27 23:45:28', '2011-08-27 23:45:28', NULL)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mAgent Load (2.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mAgent Update (3.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-27 23:53:13', "vote" = 'he' WHERE "id" = 3[0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mAgent Load (2.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (52.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (68.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAllTables (20110827083016)
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "agents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "vote" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "candidates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "settings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "victor_declared" boolean, "voting_started" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110827083016')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("agents")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("candidates")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("settings")[0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" IS NULL) LIMIT 1[0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:07:10) [GET]
+  Parameters: {"agent"=>"carol43"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Create (1.0ms)[0m   [0mINSERT INTO "settings" ("created_at", "updated_at", "victor_declared", "voting_started") VALUES('2011-08-28 00:07:10', '2011-08-28 00:07:10', 'f', 'f')[0m
+Completed in 261ms (View: 9, DB: 3) | 200 OK [http://localhost/victor?agent=carol43]
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:07:46) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 37ms (View: 3, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:07:58) [GET]
+  Parameters: {"agent"=>"alice"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'alice') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('alice', NULL, '2011-08-28 00:07:58', '2011-08-28 00:07:58')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:08:15) [GET]
+  Parameters: {"agent"=>"bob"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'bob') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('bob', NULL, '2011-08-28 00:08:15', '2011-08-28 00:08:15')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:08:35) [GET]
+  Parameters: {"agent"=>"carol"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'carol') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('carol', NULL, '2011-08-28 00:08:35', '2011-08-28 00:08:35')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:09:04) [GET]
+  Parameters: {"vote"=>"Kennedy", "agent"=>"alice"}
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'alice') LIMIT 1[0m
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Update (2.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-28 00:09:04', "vote" = 'Kennedy' WHERE "id" = 1[0m
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mSettings Update (1.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 00:09:05', "voting_started" = 't' WHERE "id" = 1[0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:09:40) [GET]
+  Parameters: {"vote"=>"Nixon", "agent"=>"carol"}
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'carol') LIMIT 1[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Update (2.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 00:09:40', "vote" = 'Nixon' WHERE "id" = 3[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:10:02) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Completed in 25ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:10:34) [GET]
+  Parameters: {"vote"=>"Nixon", "agent"=>"alice"}
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'alice') LIMIT 1[0m
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:11:52) [GET]
+  Parameters: {"vote"=>"Kennedy", "agent"=>"bob"}
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'bob') LIMIT 1[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Update (2.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-28 00:11:52', "vote" = 'Kennedy' WHERE "id" = 2[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Delete all (1.0ms)[0m   [0mDELETE FROM "candidates" WHERE 1=1[0m
+  [4;36;1mAgent Delete all (117.0ms)[0m   [0;1mDELETE FROM "agents" WHERE 1=1[0m
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 17:13:52) [GET]
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Update (1.0ms)[0m   [0mUPDATE "settings" SET "updated_at" = '2011-08-28 00:13:52', "voting_started" = 'f' WHERE "id" = 1[0m
+  [4;36;1mAgent Delete all (1.0ms)[0m   [0;1mDELETE FROM "agents" WHERE 1=1[0m
+  [4;35;1mCandidate Delete all (0.0ms)[0m   [0mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSettings Load (2.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 17:14:15) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 26ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:14:18) [GET]
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 34ms (View: 2, DB: 0) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:14:34) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;36;1mAgent Create (2.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Alice', NULL, '2011-08-28 00:14:34', '2011-08-28 00:14:34')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:14:39) [GET]
+  Parameters: {"agent"=>"Bob"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Bob') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Bob', NULL, '2011-08-28 00:14:39', '2011-08-28 00:14:39')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:14:47) [GET]
+  Parameters: {"agent"=>"Carol"}
+  [4;36;1mSettings Load (2.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carol') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Carol', NULL, '2011-08-28 00:14:47', '2011-08-28 00:14:47')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:15:12) [GET]
+  Parameters: {"agent"=>"Carol"}
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carol') LIMIT 1[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:15:33) [GET]
+  Parameters: {"vote"=>"", "agent"=>"Alice"}
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = '') LIMIT 1[0m
+  [4;36;1mCandidate Create (2.0ms)[0m   [0;1mINSERT INTO "candidates" ("name") VALUES('')[0m
+  [4;35;1mAgent Update (4.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 00:15:33', "vote" = '' WHERE "id" = 4[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Update (2.0ms)[0m   [0mUPDATE "settings" SET "updated_at" = '2011-08-28 00:15:33', "voting_started" = 't' WHERE "id" = 1[0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 17:16:59) [GET]
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Update (1.0ms)[0m   [0mUPDATE "settings" SET "updated_at" = '2011-08-28 00:16:59', "voting_started" = 'f' WHERE "id" = 1[0m
+  [4;36;1mAgent Delete all (78.0ms)[0m   [0;1mDELETE FROM "agents" WHERE 1=1[0m
+  [4;35;1mCandidate Delete all (84.0ms)[0m   [0mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:17:24) [GET]
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 25ms (View: 2, DB: 0) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:17:53) [GET]
+  Parameters: {"agent"=>""}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:18:03) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Alice', NULL, '2011-08-28 00:18:03', '2011-08-28 00:18:03')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:18:12) [GET]
+  Parameters: {"agent"=>"Bob"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Bob') LIMIT 1[0m
+  [4;35;1mAgent Create (2.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Bob', NULL, '2011-08-28 00:18:12', '2011-08-28 00:18:12')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:18:15) [GET]
+  Parameters: {"agent"=>"Carol"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carol') LIMIT 1[0m
+  [4;36;1mAgent Create (2.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Carol', NULL, '2011-08-28 00:18:15', '2011-08-28 00:18:15')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:18:32) [GET]
+  Parameters: {"vote"=>"Kennedy", "agent"=>"Carl"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carl') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Carl', NULL, '2011-08-28 00:18:32', '2011-08-28 00:18:32')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 17:19:04) [GET]
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Delete all (176.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mCandidate Delete all (1.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:19:08) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 23ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:19:16) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;36;1mSettings Load (2.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;36;1mAgent Create (2.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Alice', NULL, '2011-08-28 00:19:16', '2011-08-28 00:19:16')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (2.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:19:23) [GET]
+  Parameters: {"agent"=>"Bob"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Bob') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Bob', NULL, '2011-08-28 00:19:23', '2011-08-28 00:19:23')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:19:28) [GET]
+  Parameters: {"agent"=>"Carol"}
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carol') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Carol', NULL, '2011-08-28 00:19:28', '2011-08-28 00:19:28')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:19:37) [GET]
+  Parameters: {"agent"=>"Carol"}
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carol') LIMIT 1[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:19:53) [GET]
+  Parameters: {"vote"=>"Kennedy", "agent"=>"Carl"}
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carl') LIMIT 1[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:20:13) [GET]
+  Parameters: {"vote"=>"Kennedy", "agent"=>"Alice"}
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'Kennedy') LIMIT 1[0m
+  [4;36;1mCandidate Create (1.0ms)[0m   [0;1mINSERT INTO "candidates" ("name") VALUES('Kennedy')[0m
+  [4;35;1mAgent Update (3.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 00:20:14', "vote" = 'Kennedy' WHERE "id" = 11[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Update (1.0ms)[0m   [0mUPDATE "settings" SET "updated_at" = '2011-08-28 00:20:14', "voting_started" = 't' WHERE "id" = 1[0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:20:35) [GET]
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 30ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:21:02) [GET]
+  Parameters: {"vote"=>"Nixon", "agent"=>"Carol"}
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Carol') LIMIT 1[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'Nixon') LIMIT 1[0m
+  [4;36;1mCandidate Create (2.0ms)[0m   [0;1mINSERT INTO "candidates" ("name") VALUES('Nixon')[0m
+  [4;35;1mAgent Update (3.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 00:21:03', "vote" = 'Nixon' WHERE "id" = 13[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:21:23) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 29ms (View: 1, DB: 1) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:21:42) [GET]
+  Parameters: {"vote"=>"Nixon", "agent"=>"Alice"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:21:59) [GET]
+  Parameters: {"vote"=>"Kennedy", "agent"=>"Bob"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Bob') LIMIT 1[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'Kennedy') LIMIT 1[0m
+  [4;35;1mAgent Update (2.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 00:21:59', "vote" = 'Kennedy' WHERE "id" = 12[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:22:13) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mSettings Update (2.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 00:22:13', "victor_declared" = 't' WHERE "id" = 1[0m
+Completed in 149ms (View: 2, DB: 4) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:22:20) [GET]
+  Parameters: {"agent"=>"Eve"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (2.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:22:37) [GET]
+  Parameters: {"vote"=>"Nixon", "agent"=>"Eve"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Eve') LIMIT 1[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (2.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 17:22:54) [GET]
+  Parameters: {"vote"=>"Nixon", "agent"=>"Eve"}
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Eve') LIMIT 1[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/vote.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:22:58) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 30ms (View: 1, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 17:34:55) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (2.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 36ms (View: 2, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:36:36) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 32ms (View: 1, DB: 1) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victasdas (for 127.0.0.1 at 2011-08-27 17:36:44) [GET]
+
+ActionController::UnknownAction (No action responded to victasdas. Actions: index, member, reset_state, rst, update_victor, update_vote_state, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#victasdas (for 127.0.0.1 at 2011-08-27 17:40:14) [GET]
+
+ActionController::UnknownAction (No action responded to victasdas. Actions: index, member, reset_state, rst, update_victor, update_vote_state, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#victasdas (for 127.0.0.1 at 2011-08-27 17:40:22) [GET]
+
+ActionController::UnknownAction (No action responded to victasdas. Actions: index, member, reset_state, rst, update_victor, update_vote_state, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 17:40:25) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 58ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing MainController#asds (for 127.0.0.1 at 2011-08-27 17:41:26) [GET]
+
+ActionController::UnknownAction (No action responded to asds. Actions: index, member, reset_state, rst, update_victor, update_vote_state, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#* (for 127.0.0.1 at 2011-08-27 17:45:04) [GET]
+
+ActionController::UnknownAction (No action responded to *. Actions: index, member, reset_state, rst, update_victor, update_vote_state, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#asd (for 127.0.0.1 at 2011-08-27 17:45:11) [GET]
+
+ActionController::UnknownAction (No action responded to asd. Actions: index, member, reset_state, rst, update_victor, update_vote_state, victor, and vote):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#asd (for 127.0.0.1 at 2011-08-27 17:48:34) [GET]
+
+ActionView::MissingTemplate (Missing template main/asd.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 17:48:43) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 36ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 17:49:38) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 37ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing MainController#asdash (for 127.0.0.1 at 2011-08-27 17:49:42) [GET]
+
+ActionView::MissingTemplate (Missing template main/asdash.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:50:05) [GET]
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:50:16) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:50:39) [GET]
+  Parameters: {"agent"=>"Alice2"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 17:51:03) [GET]
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mSettings Update (1.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 00:51:03', "voting_started" = 'f', "victor_declared" = 'f' WHERE "id" = 1[0m
+  [4;35;1mAgent Delete all (64.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mCandidate Delete all (68.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:51:23) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Alice', NULL, '2011-08-28 00:51:23', '2011-08-28 00:51:23')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 17:51:26) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 17:51:46) [GET]
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 29ms (View: 7, DB: 1) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:20:54) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 25ms (View: 1, DB: 3) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:21:01) [GET]
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 28ms (View: 1, DB: 1) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:21:05) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 25ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:21:12) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:21:14) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:21:18) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 104ms (View: 2, DB: 1) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victorasd (for 127.0.0.1 at 2011-08-27 18:21:27) [GET]
+Redirected to http://localhost:3000/
+  [4;35;1mSettings Load (2.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 27ms (DB: 2) | 302 Found [http://localhost/victorasd]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:21:27) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:21:35) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#asdasdas (for 127.0.0.1 at 2011-08-27 18:21:40) [GET]
+Redirected to http://localhost:3000/
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/asdasdas]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:21:40) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:24:34) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:24:35) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 18:24:36) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#asdsad (for 127.0.0.1 at 2011-08-27 18:24:38) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 14ms (View: 1, DB: 1) | 200 OK [http://localhost/asdsad]
+
+
+Processing MainController#skdjghekrh (for 127.0.0.1 at 2011-08-27 18:24:52) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 22ms (View: 4, DB: 1) | 200 OK [http://localhost/skdjghekrh]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:25:10) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 27ms (View: 1, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 18:26:15) [GET]
+  Parameters: {"agent"=>"Bob"}
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'Bob') LIMIT 1[0m
+  [4;36;1mAgent Create (2.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Bob', NULL, '2011-08-28 01:26:15', '2011-08-28 01:26:15')[0m
+
+ActionView::MissingTemplate (Missing template main/member.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 18:26:35) [GET]
+  Parameters: {"agent"=>"Bob"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Bob') LIMIT 1[0m
+Rendering main/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 56ms (View: 2, DB: 2) | 200 OK [http://localhost/member?agent=Bob]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:27:27) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 33ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#vector (for 127.0.0.1 at 2011-08-27 18:27:30) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 14ms (View: 1, DB: 1) | 200 OK [http://localhost/vector]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:32:15) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 34ms (View: 8, DB: 3) | 200 OK [http://localhost/victor]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 18:32:47) [GET]
+
+ActionController::MethodNotAllowed (Only post requests are allowed.):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 18:39:38) [GET]
+  [4;36;1mAgent Load (4.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 49ms (View: 11, DB: 5) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 18:39:56) [GET]
+  Parameters: {"agent"=>"Nick"}
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Nick') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Nick', NULL, '2011-08-28 01:39:56', '2011-08-28 01:39:56')[0m
+Rendering main/index
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 309ms (View: 10, DB: 1) | 200 OK [http://localhost/member?agent=Nick]
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mAgent Load (2.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 18:45:16) [GET]
+  Parameters: {"agent"=>"Nick2"}
+
+ActionController::MethodNotAllowed (Only post requests are allowed.):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 18:48:16) [GET]
+  Parameters: {"agent"=>"Nick2"}
+
+ActionController::MethodNotAllowed (Only post requests are allowed.):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 18:49:58) [GET]
+  Parameters: {"agent"=>"Nick2"}
+
+ActionController::MethodNotAllowed (Only post requests are allowed.):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-27 18:50:51) [GET]
+  Parameters: {"agent"=>"Nick2"}
+
+ActionController::MethodNotAllowed (Only post requests are allowed.):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 19:12:30) [POST]
+  Parameters: {"vd"=>"reset"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Delete all (98.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mCandidate Delete all (2.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 19:12:35) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (2.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 19:13:17) [GET]
+  [4;36;1mSettings Load (2.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Delete all (1.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mCandidate Delete all (1.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 19:13:50) [GET]
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2011-08-27 19:13:57) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (2.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 14ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 19:14:04) [GET]
+  [4;35;1mAgent Load (2.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 38ms (View: 7, DB: 3) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 19:14:08) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 27ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 19:14:14) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;35;1mAgent Create (2.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Alice', NULL, '2011-08-28 02:14:14', '2011-08-28 02:14:14')[0m
+Rendering main/index
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 186ms (View: 2, DB: 2) | 200 OK [http://localhost/member?agent=Alice]
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 19:16:23) [POST]
+  Parameters: {"vd"=>"reset"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Delete all (114.0ms)[0m   [0;1mDELETE FROM "agents" WHERE 1=1[0m
+  [4;35;1mCandidate Delete all (1.0ms)[0m   [0mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#sdkfjsdkhf (for 127.0.0.1 at 2011-08-27 19:17:37) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/sdkfjsdkhf]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 19:17:53) [GET]
+  Parameters: {"agent"=>"Alice"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'Alice') LIMIT 1[0m
+  [4;35;1mAgent Create (2.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('Alice', NULL, '2011-08-28 02:17:53', '2011-08-28 02:17:53')[0m
+Rendering main/index
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 322ms (View: 2, DB: 3) | 200 OK [http://localhost/member?agent=Alice]
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 21:31:22) [GET]
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Delete all (120.0ms)[0m   [0;1mDELETE FROM "agents" WHERE 1=1[0m
+  [4;35;1mCandidate Delete all (1.0ms)[0m   [0mDELETE FROM "candidates" WHERE 1=1[0m
+
+ActionView::MissingTemplate (Missing template main/rst.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 21:31:47) [GET]
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Delete all (0.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mCandidate Delete all (0.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 40ms (View: 4, DB: 2) | 200 OK [http://localhost/rst]
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 21:31:58) [POST]
+  Parameters: {"vd"=>"reset"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Delete all (1.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mCandidate Delete all (1.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 36ms (View: 2, DB: 4) | 200 OK [http://localhost/rst]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:31:58) [POST]
+  Parameters: {"agent"=>"A"}
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'A') LIMIT 1[0m
+  [4;36;1mAgent Create (2.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('A', NULL, '2011-08-28 04:31:58', '2011-08-28 04:31:58')[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 191ms (View: 7, DB: 3) | 200 OK [http://localhost/member]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:31:58) [POST]
+  Parameters: {"agent"=>"B"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'B') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('B', NULL, '2011-08-28 04:31:58', '2011-08-28 04:31:58')[0m
+Rendering main/index
+  [4;35;1mSettings Load (2.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 134ms (View: 6, DB: 5) | 200 OK [http://localhost/member]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:31:59) [POST]
+  Parameters: {"agent"=>"C"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'C') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('C', NULL, '2011-08-28 04:31:59', '2011-08-28 04:31:59')[0m
+Rendering main/index
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 181ms (View: 3, DB: 2) | 200 OK [http://localhost/member]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:31:59) [POST]
+  Parameters: {"vote"=>"obama", "agent"=>"A"}
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'A') LIMIT 1[0m
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'obama') LIMIT 1[0m
+  [4;35;1mCandidate Create (1.0ms)[0m   [0mINSERT INTO "candidates" ("name") VALUES('obama')[0m
+  [4;36;1mAgent Update (3.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-28 04:31:59', "vote" = 'obama' WHERE "id" = 19[0m
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mSettings Update (1.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 04:31:59', "voting_started" = 't' WHERE "id" = 1[0m
+Rendering main/index
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 343ms (View: 3, DB: 7) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:31:59) [POST]
+  Parameters: {"vote"=>"mccain", "agent"=>"B"}
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'B') LIMIT 1[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'mccain') LIMIT 1[0m
+  [4;36;1mCandidate Create (1.0ms)[0m   [0;1mINSERT INTO "candidates" ("name") VALUES('mccain')[0m
+  [4;35;1mAgent Update (3.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 04:32:00', "vote" = 'mccain' WHERE "id" = 20[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Rendering main/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 290ms (View: 3, DB: 8) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 21:32:00) [GET]
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 44ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:32:00) [POST]
+  Parameters: {"vote"=>"obama", "agent"=>"C"}
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'C') LIMIT 1[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'obama') LIMIT 1[0m
+  [4;36;1mAgent Update (1.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-28 04:32:00', "vote" = 'obama' WHERE "id" = 21[0m
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Rendering main/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (2.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mSettings Update (2.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 04:32:00', "victor_declared" = 't' WHERE "id" = 1[0m
+Completed in 275ms (View: 5, DB: 7) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 21:32:00) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 109ms (View: 2, DB: 1) | 200 OK [http://localhost/victor]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 21:35:05) [POST]
+  Parameters: {"vd"=>"reset"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Update (2.0ms)[0m   [0mUPDATE "settings" SET "updated_at" = '2011-08-28 04:35:05', "voting_started" = 'f', "victor_declared" = 'f' WHERE "id" = 1[0m
+  [4;36;1mAgent Delete all (79.0ms)[0m   [0;1mDELETE FROM "agents" WHERE 1=1[0m
+  [4;35;1mCandidate Delete all (152.0ms)[0m   [0mDELETE FROM "candidates" WHERE 1=1[0m
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 377ms (View: 11, DB: 235) | 200 OK [http://localhost/rst]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:35:05) [POST]
+  Parameters: {"agent"=>"A"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'A') LIMIT 1[0m
+  [4;35;1mAgent Create (2.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('A', NULL, '2011-08-28 04:35:05', '2011-08-28 04:35:05')[0m
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 121ms (View: 2, DB: 4) | 200 OK [http://localhost/member]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:35:05) [POST]
+  Parameters: {"agent"=>"B"}
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'B') LIMIT 1[0m
+  [4;35;1mAgent Create (1.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('B', NULL, '2011-08-28 04:35:05', '2011-08-28 04:35:05')[0m
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 129ms (View: 4, DB: 3) | 200 OK [http://localhost/member]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:35:05) [POST]
+  Parameters: {"agent"=>"C"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'C') LIMIT 1[0m
+  [4;35;1mAgent Create (2.0ms)[0m   [0mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('C', NULL, '2011-08-28 04:35:05', '2011-08-28 04:35:05')[0m
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Completed in 117ms (View: 2, DB: 5) | 200 OK [http://localhost/member]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:35:06) [POST]
+  Parameters: {"vote"=>"obama", "agent"=>"A"}
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'A') LIMIT 1[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'obama') LIMIT 1[0m
+  [4;36;1mCandidate Create (2.0ms)[0m   [0;1mINSERT INTO "candidates" ("name") VALUES('obama')[0m
+  [4;35;1mAgent Update (2.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 04:35:06', "vote" = 'obama' WHERE "id" = 22[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mSettings Update (2.0ms)[0m   [0mUPDATE "settings" SET "updated_at" = '2011-08-28 04:35:06', "voting_started" = 't' WHERE "id" = 1[0m
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 306ms (View: 3, DB: 10) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:35:06) [POST]
+  Parameters: {"vote"=>"mccain", "agent"=>"B"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'B') LIMIT 1[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'mccain') LIMIT 1[0m
+  [4;35;1mCandidate Create (2.0ms)[0m   [0mINSERT INTO "candidates" ("name") VALUES('mccain')[0m
+  [4;36;1mAgent Update (3.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-28 04:35:06', "vote" = 'mccain' WHERE "id" = 23[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Rendering main/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 269ms (View: 4, DB: 11) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 21:35:06) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 31ms (View: 2, DB: 2) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:35:06) [POST]
+  Parameters: {"vote"=>"obama", "agent"=>"C"}
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'C') LIMIT 1[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'obama') LIMIT 1[0m
+  [4;35;1mAgent Update (1.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 04:35:06', "vote" = 'obama' WHERE "id" = 24[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Rendering main/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mSettings Update (3.0ms)[0m   [0mUPDATE "settings" SET "updated_at" = '2011-08-28 04:35:07', "victor_declared" = 't' WHERE "id" = 1[0m
+Completed in 313ms (View: 2, DB: 7) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 21:35:07) [GET]
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 30ms (View: 1, DB: 1) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#rst (for 127.0.0.1 at 2011-08-27 21:44:45) [POST]
+  Parameters: {"vd"=>"reset"}
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mSettings Update (2.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 04:44:45', "voting_started" = 'f', "victor_declared" = 'f' WHERE "id" = 1[0m
+  [4;35;1mAgent Delete all (68.0ms)[0m   [0mDELETE FROM "agents" WHERE 1=1[0m
+  [4;36;1mCandidate Delete all (127.0ms)[0m   [0;1mDELETE FROM "candidates" WHERE 1=1[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 375ms (View: 6, DB: 199) | 200 OK [http://localhost/rst]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:44:46) [POST]
+  Parameters: {"agent"=>"A"}
+  [4;36;1mSettings Load (2.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'A') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('A', NULL, '2011-08-28 04:44:46', '2011-08-28 04:44:46')[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 232ms (View: 5, DB: 5) | 200 OK [http://localhost/member]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:44:46) [POST]
+  Parameters: {"agent"=>"B"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'B') LIMIT 1[0m
+  [4;36;1mAgent Create (2.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('B', NULL, '2011-08-28 04:44:46', '2011-08-28 04:44:46')[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 133ms (View: 7, DB: 4) | 200 OK [http://localhost/member]
+
+
+Processing MainController#member (for 127.0.0.1 at 2011-08-27 21:44:46) [POST]
+  Parameters: {"agent"=>"C"}
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'C') LIMIT 1[0m
+  [4;36;1mAgent Create (1.0ms)[0m   [0;1mINSERT INTO "agents" ("name", "vote", "created_at", "updated_at") VALUES('C', NULL, '2011-08-28 04:44:46', '2011-08-28 04:44:46')[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Completed in 111ms (View: 6, DB: 3) | 200 OK [http://localhost/member]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:44:46) [POST]
+  Parameters: {"vote"=>"obama", "agent"=>"A"}
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" WHERE ("agents"."name" = 'A') LIMIT 1[0m
+  [4;35;1mSettings Load (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'obama') LIMIT 1[0m
+  [4;35;1mCandidate Create (1.0ms)[0m   [0mINSERT INTO "candidates" ("name") VALUES('obama')[0m
+  [4;36;1mAgent Update (3.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-28 04:44:46', "vote" = 'obama' WHERE "id" = 25[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mSettings Update (3.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 04:44:46', "voting_started" = 't' WHERE "id" = 1[0m
+Rendering main/index
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (1.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 323ms (View: 3, DB: 11) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:44:47) [POST]
+  Parameters: {"vote"=>"mccain", "agent"=>"B"}
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'B') LIMIT 1[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'mccain') LIMIT 1[0m
+  [4;36;1mCandidate Create (1.0ms)[0m   [0;1mINSERT INTO "candidates" ("name") VALUES('mccain')[0m
+  [4;35;1mAgent Update (3.0ms)[0m   [0mUPDATE "agents" SET "updated_at" = '2011-08-28 04:44:47', "vote" = 'mccain' WHERE "id" = 26[0m
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+Rendering main/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "settings" [0m
+  [4;36;1mAgent Load (2.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 286ms (View: 6, DB: 9) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 21:44:47) [GET]
+  [4;36;1mAgent Load (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCandidate Load (0.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "agents" [0m
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/victor]
+
+
+Processing MainController#vote (for 127.0.0.1 at 2011-08-27 21:44:47) [POST]
+  Parameters: {"vote"=>"obama", "agent"=>"C"}
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" WHERE ("agents"."name" = 'C') LIMIT 1[0m
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."name" = 'obama') LIMIT 1[0m
+  [4;36;1mAgent Update (2.0ms)[0m   [0;1mUPDATE "agents" SET "updated_at" = '2011-08-28 04:44:47', "vote" = 'obama' WHERE "id" = 27[0m
+  [4;35;1mSettings Load (1.0ms)[0m   [0mSELECT * FROM "settings" [0m
+Rendering main/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mSettings Update (3.0ms)[0m   [0;1mUPDATE "settings" SET "updated_at" = '2011-08-28 04:44:47', "victor_declared" = 't' WHERE "id" = 1[0m
+Completed in 258ms (View: 3, DB: 9) | 200 OK [http://localhost/vote]
+
+
+Processing MainController#victor (for 127.0.0.1 at 2011-08-27 21:44:47) [GET]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Rendering main/victor
+  [4;36;1mSettings Load (0.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 31ms (View: 2, DB: 1) | 200 OK [http://localhost/victor]
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCandidate Load (1.0ms)[0m   [0mSELECT * FROM "candidates" [0m
+
+
+Processing MainController#sdjhbaglkahglarehg (for 127.0.0.1 at 2011-08-27 21:51:20) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (1.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 31ms (View: 2, DB: 3) | 200 OK [http://localhost/sdjhbaglkahglarehg]
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+
+
+Processing MainController#sdjhbaglkahg (for 127.0.0.1 at 2011-08-27 22:31:46) [GET]
+Rendering main/index
+  [4;36;1mSettings Load (1.0ms)[0m   [0;1mSELECT * FROM "settings" [0m
+  [4;35;1mAgent Load (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+  [4;36;1mCandidate Load (1.0ms)[0m   [0;1mSELECT * FROM "candidates" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "agents" [0m
+Completed in 28ms (View: 2, DB: 2) | 200 OK [http://localhost/sdjhbaglkahg]
